@@ -1,0 +1,275 @@
+@import url(https://fonts.googleapis.com/css?family=Creepster);
+@import url(https://fonts.googleapis.com/css?family=IM+Fell+English+SC);
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif, IM Fell English SC, sans-serif, Creepster;
+}
+.header {
+  width: 100%;
+  height: 400px;
+  background-color: #ffd700;
+  background-image: url(images/hoar\ gym.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  grid-template-rows: repeat(3, 70px);
+}
+.header .p_header {
+  font-size: 40px;
+  font-family: Creepster;
+}
+.header .h_header {
+  font-size: 70px;
+  font-family: IM Fell English SC;
+}
+.header .h_header span {
+  color: #ffd700;
+}
+.header .complex_btn .btn_header {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  font-family: "IM Fell English SC";
+  width: max-content;
+  height: max-content;
+  padding: 15px 25px;
+}
+.complex_btn {
+  position: relative;
+  width: max-content;
+  height: max-content;
+  margin: 45px auto;
+  overflow: hidden;
+}
+.complex_btn .btn_header:hover {
+  color: #000;
+}
+.complex_btn:hover {
+  color: #000;
+  background: #ffd700;
+  color: #ffd700;
+  box-shadow: 0 0 5px #ffd700, 0 0 25px #ffd700, 0 0 50px #ffd700,
+    0 0 200px #ffd700;
+}
+.complex_btn span {
+  position: absolute;
+}
+.header .complex_btn span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd700);
+  animation: anm1 1s linear infinite;
+}
+@keyframes anm1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.header .complex_btn span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #ffd700);
+  animation: anm2 1s 0.25s linear infinite;
+}
+@keyframes anm2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.header .complex_btn span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffd700);
+  animation: anm3 1s 0.5s linear infinite;
+}
+@keyframes anm3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+.header .complex_btn span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #ffd700);
+  animation: anm4 1s 0.75s linear infinite;
+}
+@keyframes anm4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+.story {
+  padding-top: 20px;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  position: relative;
+}
+.story::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 40px;
+  left: 39%;
+}
+.story::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 40px;
+  right: 39%;
+}
+.story .text_story {
+  color: rgb(255, 153, 0);
+  font-size: 30px;
+}
+.story .story_con {
+  margin-top: 25px;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-evenly;
+}
+.story_con img {
+  width: 280px;
+  height: 150px;
+  border-radius: 10px;
+}
+.story_con img:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.gallery {
+  padding-top: 90px;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  position: relative;
+}
+.gallery .text_gallery::before {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 110px;
+  left: 39%;
+}
+.gallery .text_gallery::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  top: 110px;
+  right: 39%;
+}
+.gallery .text_gallery {
+  color: rgb(255, 153, 0);
+  font-size: 20px;
+  font-weight: 10;
+  letter-spacing: 4px;
+}
+.gallery_con {
+  margin: 50px auto;
+  padding-right: 120px;
+  display: grid;
+  grid-gap: 180px;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(3, 150px);
+  justify-content: center;
+  align-content: center;
+}
+.gallery_con .img {
+  margin: 0 auto;
+}
+.gallery_con .img p {
+  transform: translateY(10px);
+}
+.gallery_con .img img {
+  width: 300px;
+  height: 200px;
+  border-radius: 0 20px 0 20px;
+}
+.gallery_con .img img:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.footer {
+  width: 100%;
+  height: 400px;
+  margin-top: 230px;
+  background-color: #000;
+  background-image: url(images/IMG_20220323_181912.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  justify-content: space-around;
+  align-content: space-around;
+}
+.footer .footer_contact {
+  display: grid;
+  grid-template-rows: repeat(3, 50px);
+}
+.footer_contact .contact_h {
+  font-size: 30px;
+}
+.footer_contact .i_c p {
+  margin-left: 10px;
+  font-family: IM Fell English SC, sans-serif, Creepster;
+  font-size: 20px;
+}
+.footer_contact .i_c {
+  display: flex;
+  margin: 40px -10px;
+}
+.footer .footer_branches {
+  display: grid;
+  grid-template-rows: 70px repeat(3, 35px);
+}
+.footer_branches .branches_h {
+  font-size: 30px;
+}
+.footer_branches .branches_p {
+  margin-left: 10px;
+}
